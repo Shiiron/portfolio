@@ -1,0 +1,48 @@
+<nav class="close h-24 px-8 justify-center content-center items-center">
+  <div class="flex justify-center close-menu-item">
+    <fa-icon [icon]="FaBars" size="3x" (click)="changeMenu()"></fa-icon>
+  </div>
+
+  <div class="menu-item text-2xl">
+    <fa-icon
+      [icon]="faCircleXmark"
+      class="button-hover"
+      size="2xl"
+      (click)="changeMenu(true)"
+    ></fa-icon>
+  </div>
+
+  <div class="menu-item flex justify-center grow h-full">
+    <ul class="flex font-bold text-2xl gap-8 roadmap hover:cursor-pointer">
+      <li class="content-center">A propos</li>
+      <li class="content-center">Expérience</li>
+      <li class="content-center">Compétences</li>
+      <li class="content-center">Projets</li>
+    </ul>
+  </div>
+
+  <div class="menu-item">
+    <ul class="flex text-2xl gap-8">
+      <li>
+        <fa-icon [icon]="faGithub" class="button-hover" size="2xl"></fa-icon>
+      </li>
+      <li>
+        <fa-icon [icon]="faLinkedin" class="button-hover" size="2xl"></fa-icon>
+      </li>
+      <li>
+        <fa-icon [icon]="faEnvelope" class="button-hover" size="2xl"></fa-icon>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!-- <nav
+  style="
+    height: 96px;
+    width: 96px;
+    border-top-right-radius: 48px;
+    border-bottom-right-radius: 48px;
+    transition: width 0.3s ease-in;
+  "
+  (click)="setWidth()"
+></nav> -->

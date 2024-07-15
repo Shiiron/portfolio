@@ -31,7 +31,9 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/normalize.css/normalize.css",
               "src/styles.scss"
+
             ],
             "scripts": [],
             "browser": "src/main.ts"
