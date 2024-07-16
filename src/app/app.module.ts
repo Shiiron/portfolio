@@ -8,6 +8,8 @@ import { FooterComponent } from './components/footer/footer.component';
 import { AboutComponent } from './components/about/about.component';
 import { ExperiencesComponent } from './components/experiences/experiences.component';
 import { ProjectsComponent } from './components/projects/projects.component';
+import { ContactIconsComponent } from './components/contact-icons/contact-icons.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [AppComponent],
@@ -19,6 +21,8 @@ import { ProjectsComponent } from './components/projects/projects.component';
     AboutComponent,
     ExperiencesComponent,
     ProjectsComponent,
+    ContactIconsComponent,
+    FontAwesomeModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

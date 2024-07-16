@@ -37,14 +37,6 @@ nav:not(.close) {
   display: flex;
 }
 
-.button-hover, li {
-  &:hover {
-    color: var(--orange);
-    transition: color .3s ease-in;
-    cursor: pointer;
-  }
-}
-
 .roadmap li {
   position: relative;
   &::after {

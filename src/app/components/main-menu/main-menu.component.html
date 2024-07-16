@@ -1,6 +1,6 @@
 <nav class="close h-24 px-8 justify-center content-center items-center">
   <div class="flex justify-center close-menu-item">
-    <fa-icon [icon]="FaBars" size="3x" (click)="changeMenu()"></fa-icon>
+    <fa-icon [icon]="faBars" size="3x" (click)="changeMenu()"></fa-icon>
   </div>
 
   <div class="menu-item text-2xl">
@@ -22,27 +22,6 @@
   </div>
 
   <div class="menu-item">
-    <ul class="flex text-2xl gap-8">
-      <li>
-        <fa-icon [icon]="faGithub" class="button-hover" size="2xl"></fa-icon>
-      </li>
-      <li>
-        <fa-icon [icon]="faLinkedin" class="button-hover" size="2xl"></fa-icon>
-      </li>
-      <li>
-        <fa-icon [icon]="faEnvelope" class="button-hover" size="2xl"></fa-icon>
-      </li>
-    </ul>
+    <app-contact-icons></app-contact-icons>
   </div>
 </nav>
-
-<!-- <nav
-  style="
-    height: 96px;
-    width: 96px;
-    border-top-right-radius: 48px;
-    border-bottom-right-radius: 48px;
-    transition: width 0.3s ease-in;
-  "
-  (click)="setWidth()"
-></nav> -->
