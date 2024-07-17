@@ -1,29 +1,7 @@
-<router-outlet></router-outlet>
+<app-main-menu></app-main-menu>
 
-<main class="flex flex-col">
-  <app-main-menu></app-main-menu>
-
-  <section
-    class="flex flex-col justify-center items-center light-text font-bold"
-  ></section>
-
-  <h2 class="title font-bold text-center">Bonjour !</h2>
-  <h2 class="title font-bold text-center">
-    Moi, c'est <span class="orange-text">Loris Puech</span>
-  </h2>
-  <h4 class="sub-title font-bold text-center light-text">
-    <span class="orange-text">Développeur frontend</span> curieux et passionné
-    <br />
-    Prêt à vous aider et conseiller dans vos projets !
-  </h4>
-  <section class="p-24 grow flex justify-center light-text">
-    <app-contact-icons iconSize="3x"></app-contact-icons>
-  </section>
-
-  <section class="flex justify-center light-text pb-8">
-    <fa-icon [icon]="faArrowTurnDown" class="icon-hover" size="4x"></fa-icon>
-  </section>
-
+<main>
+  <app-homepage></app-homepage>
   <app-about></app-about>
   <app-experiences></app-experiences>
   <app-projects></app-projects>

@@ -9,11 +9,19 @@
   --darker-blue: hsl(235, 32%, 15%);
 }
 
-body, html, main {
-  height: 100%;
+body {
   font-family: "Inter", sans-serif;
+  overflow-x: hidden;
 }
 
 body {
   background-color: var(--basic-blue);
+}
+
+.orange-text {
+  color: var(--orange);
+}
+
+.light-text {
+  color: var(--light-text);
 }

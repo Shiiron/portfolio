@@ -10,6 +10,7 @@ import { ExperiencesComponent } from './components/experiences/experiences.compo
 import { ProjectsComponent } from './components/projects/projects.component';
 import { ContactIconsComponent } from './components/contact-icons/contact-icons.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { HomepageComponent } from './components/homepage/homepage.component';
 
 @NgModule({
   declarations: [AppComponent],
@@ -23,6 +24,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     ProjectsComponent,
     ContactIconsComponent,
     FontAwesomeModule,
+    HomepageComponent,
   ],
   providers: [],
   bootstrap: [AppComponent],
