@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { ContactIconsComponent } from '../contact-icons/contact-icons.component';
+import { ContactIconsComponent } from '../shared/contact-icons/contact-icons.component';
 import { faArrowTurnDown } from '@fortawesome/free-solid-svg-icons';
 
 @Component({

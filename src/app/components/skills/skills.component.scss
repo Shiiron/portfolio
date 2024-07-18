@@ -1,0 +1,19 @@
+#skills {
+  transform: translateY(-8rem);
+}
+
+.current-skills {
+  width: 75vw;
+  background: white;
+  border-radius: 2rem;
+}
+
+.futur-skills {
+  border-top: dashed 2px var(--orange);
+}
+
+.skill-container {
+  &:not(:nth-child(3)) {
+    border-right: dashed 2px var(--orange);
+  }
+}

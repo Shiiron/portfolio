@@ -8,9 +8,10 @@ import { FooterComponent } from './components/footer/footer.component';
 import { AboutComponent } from './components/about/about.component';
 import { ExperiencesComponent } from './components/experiences/experiences.component';
 import { ProjectsComponent } from './components/projects/projects.component';
-import { ContactIconsComponent } from './components/contact-icons/contact-icons.component';
+import { ContactIconsComponent } from './components/shared/contact-icons/contact-icons.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { HomepageComponent } from './components/homepage/homepage.component';
+import { SkillsComponent } from './components/skills/skills.component';
 
 @NgModule({
   declarations: [AppComponent],
@@ -25,6 +26,7 @@ import { HomepageComponent } from './components/homepage/homepage.component';
     ContactIconsComponent,
     FontAwesomeModule,
     HomepageComponent,
+    SkillsComponent
   ],
   providers: [],
   bootstrap: [AppComponent],

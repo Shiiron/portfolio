@@ -1,0 +1,9 @@
+<h3 class="pt-6 flex justify-center font-bolt">
+  <fa-icon [icon]="icon" size="3x" class="orange-text"></fa-icon> <span class="blue-text font-bold text-4xl ml-6">{{title}}</span>
+</h3>
+
+<ul class="mt-12 blue-text text-center">
+  @for (skill of skillList; track skill) {
+    <li class="text-lg font-semibold leading-10">{{skill}}</li>
+  }
+</ul>

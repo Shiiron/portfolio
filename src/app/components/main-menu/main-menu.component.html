@@ -1,5 +1,5 @@
 <div
-  class="toggle-menu menu-item light-text flex sticky items-center top-O left-0 pl-8 h-32 w-32"
+  class="toggle-menu menu-item light-text flex sticky items-center top-0 left-0 pl-8 h-32 w-32"
   (click)="changeMenu()"
 >
   <fa-icon [icon]="faBars" size="3x"></fa-icon>
@@ -15,12 +15,11 @@
 
   <div class="flex justify-center grow h-full">
     <ul class="flex font-bold text-2xl gap-8 roadmap hover:cursor-pointer">
-      <a href="#about" class="flex menu-item"
-        ><li class="content-center">A propos</li></a
-      >
-      <a class="flex menu-item"><li class="content-center">Expérience</li></a>
-      <a class="flex menu-item"><li class="content-center">Compétences</li></a>
-      <a class="flex menu-item"><li class="content-center">Projets</li></a>
+      @for (nav of main_nav; track nav.id_to_link) {
+        <a href="{{nav.id_to_link}}" class="flex menu-item">
+          <li class="content-center">{{nav.label}}</li>
+        </a>
+      }
     </ul>
   </div>
 
