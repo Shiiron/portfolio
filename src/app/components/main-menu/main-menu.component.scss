@@ -1,5 +1,6 @@
 .roadmap li {
   position: relative;
+
   &::after {
     background: none repeat scroll 0 0 transparent;
     bottom: 0;
@@ -11,45 +12,41 @@
     transition: height 0.3s ease 0s, left 0.3s ease 0s;
     width: 100%;
   }
+
   &:hover::after {
     height: 5px;
   }
 }
+
 nav {
-  position: sticky;
-  top: 0;
-  left: 0;
   background: var(--darker-blue);
-  height: 8rem;
-  width: 100vw;
   margin-top: -8rem;
   transform: translateX(-100vw);
-  transition: all 1s ease-in-out;
+  transition: all .5s ease-in-out;
+
+  div {
+    min-width: 300px;
+  }
 }
 
 nav.open {
   transform: translateX(0);
-  transition: all 1s ease-in-out;
+  transition: all .5s ease-in-out;
 }
 
 .menu:has(+ nav.open) {
   transform: translateX(100vw);
 }
 
-.menu {
-  height: 8rem;
-  width: 8rem;
-  color: white;
+.toggle-menu {
   border-top-right-radius: 4rem;
   border-bottom-right-radius: 4rem;
   background: var(--darker-blue);
-  display: flex;
-  padding-left: 2rem;
-  align-items: center;
-  position: sticky;
-  top: 0;
-  left: 0;
-  transition: all 1s ease-in-out;
+  transition: all .5s ease-in-out;
   transform: translateX(0vw);
 }
 
+.menu-item:hover {
+  transition: color .3s ease-in-out;
+  color: var(--orange);
+}

@@ -1,25 +1,30 @@
-<div class="menu" (click)="changeMenu()">
+<div
+  class="toggle-menu menu-item light-text flex sticky items-center top-O left-0 pl-8 h-32 w-32"
+  (click)="changeMenu()"
+>
   <fa-icon [icon]="faBars" size="3x"></fa-icon>
 </div>
 
-<nav class="flex light-text">
+<nav class="flex light-text w-screen h-32 sticky top-0 left-0">
   <div
     class="menu-item text-2xl flex items-center pl-4"
     (click)="changeMenu(true)"
   >
-    <fa-icon [icon]="faCircleXmark" class="button-hover" size="2xl"></fa-icon>
+    <fa-icon [icon]="faCircleXmark" size="2xl"></fa-icon>
   </div>
 
-  <div class="menu-item flex justify-center grow h-full">
+  <div class="flex justify-center grow h-full">
     <ul class="flex font-bold text-2xl gap-8 roadmap hover:cursor-pointer">
-      <li class="content-center"><a href="#about">A propos</a></li>
-      <li class="content-center">Expérience</li>
-      <li class="content-center">Compétences</li>
-      <li class="content-center">Projets</li>
+      <a href="#about" class="flex menu-item"
+        ><li class="content-center">A propos</li></a
+      >
+      <a class="flex menu-item"><li class="content-center">Expérience</li></a>
+      <a class="flex menu-item"><li class="content-center">Compétences</li></a>
+      <a class="flex menu-item"><li class="content-center">Projets</li></a>
     </ul>
   </div>
 
-  <div class="menu-item flex items-center pr-10">
+  <div class="flex items-center pr-10">
     <app-contact-icons></app-contact-icons>
   </div>
 </nav>
