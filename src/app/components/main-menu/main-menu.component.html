@@ -1,11 +1,11 @@
 <div
-  class="toggle-menu menu-item light-text flex sticky items-center top-0 left-0 pl-8 h-32 w-32"
+  class="toggle-menu menu-item light-text flex sticky items-center top-0 left-0 pl-8 h-32 w-32 z-10"
   (click)="changeMenu()"
 >
   <fa-icon [icon]="faBars" size="3x"></fa-icon>
 </div>
 
-<nav class="flex light-text w-screen h-32 sticky top-0 left-0">
+<nav class="flex light-text w-screen h-32 sticky top-0 left-0 z-10">
   <div
     class="menu-item text-2xl flex items-center pl-4"
     (click)="changeMenu(true)"
