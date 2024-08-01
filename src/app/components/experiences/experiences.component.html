@@ -1,6 +1,6 @@
 <section id="experiences">
-  <h2 class="text-center font-bold pb-16 text-4xl light-text">Expériences Professionelle</h2>
-  <div class="flex justify-center gap-x-16 pb-16">
+  <h2 class="text-center font-bold pb-16 text-4xl light-text">Expériences Professionelles</h2>
+  <div class="flex justify-center gap-x-16 pb-48">
     <ul class="light-text">
       @for (experience of experiences; track $index) {
         <li class="p-8 text-2xl" [class]="$index === selectedIndex ? 'is-selected' : ''" (click)="setSelectedExperience($index)">{{ experience.menu_label }}</li>
@@ -12,7 +12,7 @@
         <h4 class="font-bold">{{ selectedExperience.title }}</h4>
         <h6>{{ selectedExperience.sub_title }}</h6>
 
-        <p class="mt-8">{{ selectedExperience.description }}</p>
+        <p class="mt-8 min-h-40">{{ selectedExperience.description }}</p>
       </article>
     }
   </div>

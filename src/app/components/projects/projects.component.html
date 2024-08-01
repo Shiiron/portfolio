@@ -1,0 +1,14 @@
+<article id="projects" class="grid justify-items-center py-16">
+  <h2 class="text-center font-bold pb-12 text-4xl light-text">Projets</h2>
+
+  <div class="grid grid-cols-3 w-8/12 gap-8">
+    @for (project of projects; track $index) {
+      <app-projet-card [project]="project"></app-projet-card>
+    }
+  </div>
+
+  <p class="py-8 light-text">J'aime également résoudre des problèmes et énigmes afin d'améliorer ma capacité de réflexion et pour cela j'aime résoudre les problème présent sur le site</p>
+  <div>
+    <a target="_blank" class="font-bold text-2xl light-text" href="https://leetcode.com/u/Shirons/">LeetCode</a>
+  </div>
+</article>

@@ -7,6 +7,7 @@
   --orange: hsl(22, 74%, 53%);
   --basic-blue: hsl(236, 40%, 22%);
   --darker-blue: hsl(235, 32%, 15%);
+  --overlay-blue: hsla(235, 32%, 15%, 0.8);
 }
 
 body {
@@ -28,4 +29,10 @@ body {
 
 .blue-text {
   color: var(--basic-blue);
+}
+
+.icon-hover:hover {
+  color: var(--orange);
+  transition: color .3s ease-in;
+  cursor: pointer;
 }
