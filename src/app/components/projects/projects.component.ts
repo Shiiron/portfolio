@@ -24,15 +24,15 @@ export class ProjectsComponent {
         img: '/assets/img/country-list.png',
         title: 'Liste de pays',
         description: 'Liste de pays réalisée avec Angular et l\'api REST country pour un projet frontend-mentor',
-        github_link: 'https://github.com/Shiiron/frontend-mentor-angular/tree/main/src/app/project-list/country-list',
-        website_link: 'https://frontend-mentor-challenge-ruddy.vercel.app/country-list/list'
+        github_link: 'https://github.com/Shiiron/frontend-mentor-angular/tree/country-list',
+        website_link: 'https://country-list-nu.vercel.app/country-list/list'
       },
       {
         img: '/assets/img/space-tourism.png',
         title: 'Space Tourism',
         description: 'Site vitrine fictif pour une agence de tourism spatial, réalisé avec Angular pour un projet frontend-mentor',
-        github_link: 'https://github.com/Shiiron/frontend-mentor-angular',
-        website_link: 'https://shiiron-space-tourism.netlify.app/home/main'
+        github_link: 'https://github.com/Shiiron/frontend-mentor-angular/tree/space-tourism',
+        website_link: 'https://frontend-mentor-angular.vercel.app/home/main'
       }
     ]
   }
