@@ -20,7 +20,6 @@
 
 nav {
   background: var(--darker-blue);
-  margin-top: -8rem;
   transform: translateX(-100vw);
   transition: all .5s ease-in-out;
 
@@ -49,4 +48,33 @@ nav.open {
 .menu-item:hover {
   transition: color .3s ease-in-out;
   color: var(--orange);
+}
+
+@media (max-width: 1024px) {
+  nav {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 6rem 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .item-list {
+    padding-left: 1rem;
+    grid-column: 1 / 3;
+
+    ul {
+      display: grid;
+      width: 100vw;
+      padding-top: 2rem;
+
+      a {
+        justify-content: center;
+      }
+    }
+  }
+
+  .icon-container {
+    justify-content: center;
+    grid-column: 1 / 3;
+  }
 }

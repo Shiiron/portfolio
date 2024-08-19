@@ -1,11 +1,8 @@
 .title {
-  font-size: 6rem;
+  font-size: var(--fs-xl);
   color: var(--light-text);
 }
-.sub-title {
-  font-size: 2rem;
-}
 
-.homepage {
-  height: calc(100vh - 8rem);
+.sub-title {
+  font-size: var(--fs-lg);
 }

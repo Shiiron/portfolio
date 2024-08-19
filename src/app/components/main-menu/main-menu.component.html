@@ -1,20 +1,20 @@
 <div
-  class="toggle-menu menu-item light-text flex sticky items-center top-0 left-0 pl-8 h-32 w-32 z-10"
+  class="toggle-menu menu-item light-text flex absolute items-center top-0 left-0 pl-8 h-32 w-32 z-10"
   (click)="changeMenu()"
 >
   <fa-icon [icon]="faBars" size="3x"></fa-icon>
 </div>
 
-<nav class="flex light-text w-screen h-32 sticky top-0 left-0 z-10">
+<nav class="flex light-text w-screen h-32 fixed top-0 left-0 z-10">
   <div
-    class="menu-item text-2xl flex items-center pl-4"
+    class="menu-item fs-xs flex items-center pl-4"
     (click)="changeMenu(true)"
   >
     <fa-icon [icon]="faCircleXmark" size="2xl"></fa-icon>
   </div>
 
-  <div class="flex justify-center grow h-full">
-    <ul class="flex font-bold text-2xl gap-8 roadmap hover:cursor-pointer">
+  <div class="item-list flex justify-center grow h-full">
+    <ul class="flex font-bold fs-sm gap-8 roadmap hover:cursor-pointer">
       @for (nav of main_nav; track nav.id_to_link) {
         <a href="{{nav.id_to_link}}" class="flex menu-item">
           <li class="content-center">{{nav.label}}</li>
@@ -23,7 +23,7 @@
     </ul>
   </div>
 
-  <div class="flex items-center pr-10">
+  <div class="icon-container flex items-center pr-10">
     <app-contact-icons></app-contact-icons>
   </div>
 </nav>
