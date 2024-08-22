@@ -1,18 +1,18 @@
 <section id="skills" class="flex justify-center items-center flex-col">
-  <article class="current-skills grid grid-cols-3 justify-items-center">
-    <div class="w-full skill-container pb-5">
+  <article class="current-skills grid">
+    <div class="skill-container pb-5 text-center">
       <app-skill-card [icon]="faPalette" [skillList]="design_skills" title="Créer"></app-skill-card>
     </div>
 
-    <div class="w-full skill-container pb-5">
+    <div class="skill-container pb-5 text-center">
       <app-skill-card [icon]="faCode" [skillList]="code_skills" title="Développer"></app-skill-card>
     </div>
 
-    <div class="w-full skill-container pb-5">
+    <div class="wskill-container pb-5 text-center">
       <app-skill-card [icon]="faShareNodes" [skillList]="share_skills" title="Partager"></app-skill-card>
     </div>
 
-    <div class="futur-skills text-center p-12 blue-text col-span-3 w-full">
+    <div class="futur-skills text-center p-12 blue-text">
       <p class="fs-xs">Curieux par nature, voici une liste non exhaustive de technologies sur lequel je souhaite acquérir plus d'expérience</p>
       <ul class="flex justify-center items-center mt-8 gap-9">
         @for(skill of futur_skills; track skill) {

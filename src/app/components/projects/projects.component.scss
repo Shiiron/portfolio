@@ -1,3 +1,15 @@
 #projects {
   background-color: var(--orange);
+
+  .project-list {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 1024px) {
+  #projects {
+    .project-list {
+      grid-template-columns: auto;
+    }
+  }
 }

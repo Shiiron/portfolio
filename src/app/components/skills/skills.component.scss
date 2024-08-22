@@ -1,19 +1,49 @@
 #skills {
   transform: translateY(-8rem);
+
+  article {
+    grid-template-columns: 33.33% 33.33% 33.33%;
+  }
 }
 
 .current-skills {
-  width: 75vw;
+  max-width: 75vw;
   background: white;
   border-radius: 2rem;
 }
 
 .futur-skills {
   border-top: dashed 2px var(--orange);
+  grid-column: 1 / span 3;
 }
 
 .skill-container {
   &:not(:nth-child(3)) {
     border-right: dashed 2px var(--orange);
+  }
+}
+
+@media (max-width: 1024px) {
+  .current-skills {
+    max-width: 100vw;
+    margin: 2rem;
+  }
+
+  .skill-container {
+    &:not(:nth-child(3)) {
+      border-bottom: dashed 2px var(--orange);
+      border-right: none;
+    }
+  }
+
+  #skills {
+    article {
+      grid-template-columns: auto;
+      grid-template-rows: auto;
+    }
+  }
+
+  .futur-skills {
+    grid-column: auto;
   }
 }

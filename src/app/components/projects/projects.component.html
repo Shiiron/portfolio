@@ -1,13 +1,13 @@
 <article id="projects" class="grid justify-items-center py-16">
   <h2 class="fs-lg text-center font-bold pb-12 light-text">Projets</h2>
 
-  <div class="grid grid-cols-3 w-8/12 gap-16">
+  <div class="project-list grid w-8/12 gap-16">
     @for (project of projects; track $index) {
       <app-projet-card [project]="project"></app-projet-card>
     }
   </div>
 
-  <p class="py-12 light-text fs-xs">J'aime également résoudre des problèmes et énigmes afin d'améliorer ma capacité de réflexion et pour cela j'aime résoudre les problème présent sur le site</p>
+  <p class="py-16 mx-16 light-text fs-xs">J'aime également résoudre des problèmes et énigmes afin d'améliorer ma capacité de réflexion et pour cela j'aime résoudre les problème présent sur le site</p>
   <div>
     <a target="_blank" class="font-bold text-2xl light-text" href="https://leetcode.com/u/Shirons/">LeetCode</a>
   </div>
