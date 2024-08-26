@@ -1,7 +1,7 @@
 <section id="experiences">
   <h2 class="fs-lg text-center font-bold pb-16 light-text">Expériences Professionelles</h2>
-  <div class="flex justify-center gap-x-16 pb-48">
-    <ul class="light-text">
+  <div class="lg:flex grid justify-center lg:gap-x-16 gap-y-16 pb-48">
+    <ul class="light-text flex lg:grid">
       @for (experience of experiences; track $index) {
         <li class="p-8 fs-sm" [class]="$index === selectedIndex ? 'is-selected' : ''" (click)="setSelectedExperience($index)">{{ experience.menu_label }}</li>
       }
